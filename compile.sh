@@ -55,7 +55,6 @@ if [ -f "$FILE" ]; then
     FILE_CI="$KERNEL_NAME".img
     if [ -f "$FILE_CI" ]; then
         curl --connect-timeout 10 -T "$FILE_CI" https://oshi.at
-        curl --connect-timeout 10 --upload-file "$FILE_CI" https://transfer.sh
         echo " "
     fi
 else
