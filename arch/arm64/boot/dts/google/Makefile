@@ -11,6 +11,8 @@ else
 dtb-$(CONFIG_BOARD_BRAMBLE) += lito-v2-bramble-pvt.dtb
 dtb-$(CONFIG_BOARD_BRAMBLE) += lito-v2-bramble_m-pvt.dtb
 dtb-$(CONFIG_BOARD_REDFIN) += lito-v2-redfin-pvt.dtb
+#TODO
+#dtbo-$(CONFIG_BOARD_BARBET) +=  lito-v2-barbet-pvt-overlay.dtbo
 endif
 
 always          := $(dtb-y)
