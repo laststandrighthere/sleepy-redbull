@@ -24,9 +24,9 @@ source setup.sh
 mc
 
 # Build the kernel
-kmake 
+kmake
 
-# Create payload dir under kramflash/rd 
+# Create payload dir under kramflash/rd
 mkdir -p kramflash/rd/payload
 
 # Concate the DTB and copy the concated DTB and Image.lz4 to kramflash/rd/payload
@@ -35,7 +35,7 @@ cp dtb kramflash/rd/payload/dtb
 cp out/arch/arm64/boot/Image.lz4 kramflash/rd/payload/Image.lz4
 
 # Install pigz as its required to pack the image
-apt install -y pigz
+# apt install -y pigz
 
 cd kramflash
 
